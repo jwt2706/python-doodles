@@ -7,4 +7,4 @@ def moyenne(valeurs): #
 
 liste = list(map(int, input("Entrez toutes valeurs separee par un espace: ").split()))#demander des valeurs
 res = moyenne(liste)#cherche les resultats
-print("La moyenne est", res[0], ", la note la plus eleve est", res[1], "et la note la plus base est", res[2])#affiche les resultats
+print("La moyenne est", res[0], ", le nombre le plus grand est", res[1], "et le nombre le plus petit est", res[2])#affiche les resultats

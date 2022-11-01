@@ -1,7 +1,7 @@
 n = int(input("Entrez une valeur pour 'n': "))
 p = int(input("Entrez une valeur pour 'p': "))
 #demande des valeurs pour n et p^
-print("Les valeurs de 'n' qui son inferieurs a 'p' son:")
+print("Les valeurs de 'n' qui son inferieurs a 'p' sont:")
 for x in range(n, p):
     print(x)
 #utilise l'instruction range pour imprimer tous les nombres^

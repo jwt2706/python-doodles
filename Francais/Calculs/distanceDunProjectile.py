@@ -1,6 +1,7 @@
+#Trouve les differentes distrance d'un ballon lance dependament de la vitesse
 import math
 
-def calculeDistance(v):
+def calculeDistance(vitesse):
     teta = 0
     resultats = []
     while teta <= 90: #pour chaque bond de 10 degrees, on calcule la distance
@@ -10,8 +11,7 @@ def calculeDistance(v):
         resultats.append(distance) #on ajoute la reponse calcule dans la liste 'resultats'
     return resultats #on retourne la liste
 
-
-v = float(input("Entrez une vitesse (metres par secondes): ")) #demande une vitesse
+vitesse = float(input("Entrez une vitesse (metres par secondes): ")) #demande une vitesse
 listeDistance = calculeDistance(v) #calcules des valeurs
 n = 0
 while n < 10: #imprime tous les resultats

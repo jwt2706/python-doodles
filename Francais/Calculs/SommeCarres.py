@@ -1,4 +1,5 @@
-# 1*1 + 2*2 + ... + n*n
+#Calcule la somme des carres.
+#Formule: 1*1 + 2*2 + ... + n*n
 
 def sommeCarees(n):
  valeur = 1
@@ -7,7 +8,6 @@ def sommeCarees(n):
    somme = somme + valeur * valeur
    valeur = valeur + 1
  return somme  
-
 
 n = int(input("SVP entrer un entier : "))
 print("La somme des carres de 1 à",n, "est", sommeCarees(n)) 

@@ -1,3 +1,6 @@
+#Le joueur qui ramasse la derniere pierre remporte la partie.
+#Tu ne peut pas ramasser tout les pierre d'un coup.
+
 pile = 20
 MAX = 5 #place les valeurs de default
 joueur = 0

@@ -9,8 +9,10 @@ def effectuezTest(typeDeQuestion):
         b = random.randint(0,9)
         if typeDeQuestion == 1: #demande une question dependant du mode
             print(a, "*", b, "=", end=' ')
-        else:
+        elif typeDeQuestion == 0:
             print(a, "+", b, "=", end=' ')
+        else:
+            break
         r = int(input()) #demande une reponse
         if typeDeQuestion == 0 and r == a+b or typeDeQuestion == 1 and r == a*b:
             bonneReponses = bonneReponses + 1 #si la reponse est bonne, on ajoute 1 a 'bonneReponses'

@@ -31,7 +31,7 @@ def nyasa(L):
     nombreDePaires = 0
     tmp = []
     for i in range(len(L)):
-        tmp = [
+        tmp = []
         for j in range(len(tmp)):
             if j != 0:
                 print(L[i:], L[i+1:])

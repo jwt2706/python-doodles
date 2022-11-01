@@ -1,5 +1,3 @@
-
-
 def séquenceDeDeux(): #Définir la fonction
     index = 0
     index1 = 1 #On déclare des valeurs, et on demande des valeurs à l'utilisateur
@@ -14,6 +12,5 @@ def séquenceDeDeux(): #Définir la fonction
             index = index+1 #Valeur de index + 1
             index1 = index1+1 #Valeur de index + 1
     return False #Retourner False
-
 
 print(séquenceDeDeux()) #Appeler la fonction

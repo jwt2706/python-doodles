@@ -1,3 +1,4 @@
+#calculatrice de l'ecart type
 import math
 
 n = list(map(int,input("Entrez des valeurs et separer les par un espace: ").split())) #demande des valeurs

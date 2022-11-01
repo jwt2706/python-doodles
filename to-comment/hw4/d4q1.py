@@ -1,4 +1,3 @@
-
 def sequenceMax(liste): #On définit la variable
     index = 0
     comboMax = 1

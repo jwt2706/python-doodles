@@ -1,9 +1,6 @@
-#Question 4 - Devoir 4
 
 def read_raw(file):
-    '''str->list of str
-    Renvoie une liste de chaînes qui ont été stockées dans un fichier.'''
-    raw = open(file).read().splitlines()
+    raw = open(file).read().splitlines() #open and reads file then returns it in a list named 'raw'
     for i in range(len(raw)):
         raw[i]=raw[i].strip()
     return raw
@@ -25,27 +22,21 @@ def clean_up(l):
     clean_board=[]
     l.sort()
     cleanDict = {}
-    #print(l)
     for i in l:
-        #print(i)
         if i in cleanDict:
             cleanDict[i] = cleanDict[i] + 1
         else:
             cleanDict[i] = 1
-    #print(cleanDict)
 
     for key in cleanDict:
         if key == "*":
             continue
         num = cleanDict[key]
-        #print(key, num)
         if num%2 != 0:
             num = num - 1
         if num != 0:
             for x in range(num):
                 clean_board.append(key)
-    # COMPLETEZ CETTE FONCTION EN CONFORMITE AVEC LA DESCRIPTION CI-DESSUS
-    # AJOUTEZ VOTRE CODE ICI
     
     return clean_board
     
@@ -68,7 +59,7 @@ def  is_rigorous(l):
 
     
 #programme principal
-file=input("Entrer le nom du fichier: ")
+file=input("Entrer le nom du fichier (Choix: 'file1.txt' 'file2.txt 'file3.txt' 'file4.txt'): ")
 file=file.strip()
 b=read_raw(file)
 print("\nAvant clean-up:\n", b)
