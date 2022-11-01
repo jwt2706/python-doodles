@@ -1,3 +1,4 @@
+#trouve la longeur de la plus grande suite dans la serie de nombres
 def sequenceMax(liste): #On définit la variable
     index = 0
     comboMax = 1
